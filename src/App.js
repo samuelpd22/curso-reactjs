@@ -1,25 +1,24 @@
 
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+import SayMayName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 
 function App() {
-  const name= "Samuel";
+  
 
-  const newName = name.toUpperCase();
+  const nome = "Maria";
 
-  function sum(a, b){
-    return a + b;
-  }
-
-  const url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHNo-lk0YLf0NOXf3MG3ZLaZi9dkY3a5o1AD065jj0a-bpLQpm4VqdPAgA04OzzmnzAUY&usqp=CAU"
+ 
 
   return (
     <div className="App">
-      <p>Ola, {newName}</p>
-      <p>Soma {sum(4,4)}</p>
-      <img src={url} alt="Minha imagem"/>
-      <HelloWorld/>
+      <SayMayName nome="Samuel"/>
+      <SayMayName nome="Lara"/>
+      <SayMayName nome="Igor"/>
+      <SayMayName nome="Savv"/>
+      <SayMayName nome={nome}/>
+      <Pessoa nome="Rodrigo" idade="28" profissao="programador" foto="https://via.placeholder.com/150"/>
      
     </div>
   );
