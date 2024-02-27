@@ -1,9 +1,8 @@
-function Item(props){
+function Item({marca, lancamento}){
     return(
         <>
         <li>
-            {props.marca}
-            <p>Test</p>
+            {marca} - {lancamento}
         </li>
         </>
     )
