@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 function Comp(){
     const comprimentar=() => {
 
@@ -10,11 +12,23 @@ function Comp(){
         } else {
             return <p>Boa noite</p>
         }
+        
     }
+    const [log,setLog]=useState(false);
+
+        const msgLogin=()=>{
+            return 'Usuario logado'
+        }
+        const logoff=()=>{
+            return 'Favor logar!!'
+        }
 
     return(
         <div>
            <p>{comprimentar()}</p> 
+           <p>{log?msgLogin():logoff()}</p>
+           <button onClick={()=> setLog(!log)}>{log?logoff:msgLogin}</button>
+
         </div>
     )
 }
