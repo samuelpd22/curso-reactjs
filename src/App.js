@@ -1,7 +1,6 @@
 
 import './App.css';
-import Condis from './components/Condis.js';
-  
+import Comp from './components/Comp.js';
 
 
 function App() {
@@ -9,10 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Renderisação condicional</h1>
-      <Condis/>
-      
-     
+     <Comp/>
     </div>
   );
 }
