@@ -1,8 +1,7 @@
 
 import './App.css';
-import Evento from './components/Evento';
-import Form from './components/Form';
-
+import Condis from './components/Condis.js';
+  
 
 
 function App() {
@@ -10,9 +9,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Testando eventos</h1>
-      <Evento/>
-      <Form/>
+      <h1>Renderisação condicional</h1>
+      <Condis/>
+      
      
     </div>
   );
