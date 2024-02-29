@@ -1,14 +1,19 @@
 
 import './App.css';
-import Cores from './components/Cores';
+import OutraLista from './components/OutraLista';
+
 
 
 function App() {
   
+  const meusCarros = ['i30' , 'Civic type R' , 'Fusion'];
+  
 
   return (
     <div className="App">
-     <Cores/>
+      <h1>Renderisação de listas</h1>
+      <OutraLista itens={meusCarros}/>
+      
     </div>
   );
 }
