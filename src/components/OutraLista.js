@@ -1,4 +1,4 @@
-function OutraLista({itens}){
+/*function OutraLista({itens}){
     return (
         <>
             <h3>Lista de coisas carros: </h3>
@@ -15,4 +15,4 @@ function OutraLista({itens}){
         </>
     )
 }
-export default OutraLista;
+export default OutraLista;*/
