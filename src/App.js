@@ -1,6 +1,6 @@
 
 import './App.css';
-import Comp from './components/Comp.js';
+import Cores from './components/Cores';
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-     <Comp/>
+     <Cores/>
     </div>
   );
 }
