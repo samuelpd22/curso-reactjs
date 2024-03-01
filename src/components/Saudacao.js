@@ -4,7 +4,7 @@ function Saudacao({nome}){
     }
     return(
         <div>
-            <p>{gerarSaudacao(nome)}</p>
+            {nome && <p>{gerarSaudacao(nome)}</p>}
         </div>
     )
 }
