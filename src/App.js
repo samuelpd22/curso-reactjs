@@ -1,19 +1,21 @@
 
+import { useState } from 'react';
 import './App.css';
-import Saudacao from './components/Saudacao';
-import SeuNome from './components/SeuNome';
-import { useState } from "react";
+
 
 
 
 
 function App() {
-  const [nome,setNome] = useState();
+
+  const [num,setNum] = useState(1);
+
   return (
     <div className="App">
-      <h1>State lift</h1>
-      <SeuNome setNome={setNome} />
-      <Saudacao nome={nome}/>
+      <h1>State lift 2</h1>
+      <p>Valor do state num:{num}</p>
+      <button onClick={()=>setNum(num + 1)}> AUMENTAR VALOR </button>
+     
      
      
       
